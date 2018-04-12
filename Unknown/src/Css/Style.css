@@ -1,0 +1,119 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 mars 2017, 00:46:32
+    Author     : farouk
+*/
+
+#login_btnn
+{ 
+    -fx-background-color: #26a69a;
+}
+#register_btnn
+{
+    -fx-background-color: #26a69a;
+}
+#forgot_pwd_btn
+{
+    -fx-background-color: #26a69a;
+}
+#login_btnn:hover
+{
+    -fx-background-color: #003333;
+}
+#register_btnn:hover
+{
+    -fx-background-color: #003333;
+}
+#forgot_pwd_btn:hover
+{
+    -fx-background-color: #003333;
+}
+#register_btnn
+{
+    -fx-background-color: #26a69a;
+}
+#register_btnn:hover
+{
+    -fx-background-color: #003333;
+}
+#joindrefamille
+{
+   -fx-background-color: #301a7561;
+}
+#joindrefamille:hover
+{
+    -fx-background-color: #166d0673;
+}
+#quiterfamille
+{
+    -fx-background-color: #301a7561;
+}
+
+#quiterfamille:hover
+{
+      -fx-background-color: #166d0673;
+}
+#ajoutfamille
+{
+    -fx-background-color: #301a7561;
+}
+#ajoutfamille:hover
+{
+      -fx-background-color: #166d0673;
+}
+#back_btn
+{
+      -fx-background-color: #166d0673;
+
+}
+
+#back_btn:hover
+{
+    -fx-background-color: #00ffff;
+
+}
+#button_btn
+{
+  -fx-background-color: #166d0673;
+}
+
+#button_btn:hover
+{
+ -fx-background-color: #00ffff;
+
+}
+#choose_pic:hover
+{
+      -fx-background-color: #166d0673;
+}
+#choose_pic
+{
+        -fx-background-color: #301a7561;
+
+}
+#join:hover{
+     -fx-background-color: #301a7561;
+}
+
+#join{
+     -fx-background-color: #166d0673;
+}
+#btnenable
+{
+     -fx-background-color: #166d0673;
+}
+#btnenable:hover{
+     -fx-background-color: #301a7561;
+}
+#block
+{
+     -fx-background-color: #166d0673;
+}
+#block:hover
+{
+     -fx-background-color: #301a7561;
+}

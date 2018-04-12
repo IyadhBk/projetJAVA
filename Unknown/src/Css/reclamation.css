@@ -1,0 +1,29 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+#AnchorPane
+{
+    -fx-background-image: url("certifications.jpg");
+}
+
+
+
+
+
+.button
+{
+    -fx-background-color:#3399ff;
+    
+}
+
+
+.button:hover
+{
+    -fx-background-color:#ff9933;
+    
+}
+

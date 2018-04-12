@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="898.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.VetAfterLoginController">
+   <children>
+      <AnchorPane layoutX="39.0" layoutY="25.0" prefHeight="114.0" prefWidth="807.0" style="-fx-background-color: #e65c00;">
+         <children>
+            <Hyperlink fx:id="GestArticle" layoutX="72.0" layoutY="41.0" onAction="#GestArticle" prefHeight="33.0" prefWidth="212.0" text="Article Management" textFill="#1e1818" underline="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="statistic" layoutX="509.0" layoutY="46.0" onAction="#statistic" prefHeight="35.0" prefWidth="172.0" text="Show statistics" textFill="#1e1818" underline="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fx:id="log" fitHeight="33.0" fitWidth="30.0" layoutX="746.0" layoutY="19.0" onMouseClicked="#logOut" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-shutdown-26.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="689.0" layoutY="28.0" text="Logout" />
+         </children>
+      </AnchorPane>
+      <ImageView disable="true" fitHeight="338.0" fitWidth="807.0" layoutX="39.0" layoutY="139.0" nodeOrientation="INHERIT" opacity="0.69" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Pet-Care-market.jpg" />
+         </image>
+         <effect>
+            <Lighting light="$null" specularConstant="0.25" specularExponent="26.19" surfaceScale="5.67">
+               <bumpInput>
+                  <Blend />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Text fill="#d7d2d2" layoutX="57.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A Dog is the only thing on earth that loves you than he loves HIMSELF" wrappingWidth="315.13671875">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

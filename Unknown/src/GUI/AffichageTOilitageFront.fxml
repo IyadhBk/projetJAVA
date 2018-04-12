@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="parent" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="1025.0" styleClass="main" stylesheets="@../Css/affichageaccueil.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.AffichageTOilitageFrontController">
+   <children>
+      <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="800.0" styleClass="menu_bar">
+         <effect>
+            <DropShadow height="10.0" radius="4.5" width="10.0" />
+         </effect>
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../utils/assets/Zanimauxlogo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="acceuil" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Acceuil" textFill="#ff6e06">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="11.0" left="30.0" top="11.0" />
+               </padding>
+            </Label>
+            <Label fx:id="services" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Services" textFill="#837f7f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="11.0" left="25.0" top="11.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="produits" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Produits" textFill="#837f7f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="11.0" left="23.0" top="11.0" />
+               </padding>
+            </Label>
+            <Label fx:id="veterinaires" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Veterinaires" textFill="#837f7f">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="11.0" left="8.0" top="11.0" />
+               </padding>
+            </Label>
+            <Label fx:id="evenements" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Evenements" textFill="#837f7f">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="11.0" left="8.0" top="11.0" />
+               </padding>
+            </Label>
+            <Label fx:id="espace" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Association et Toilitage" textFill="#837f7f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="11.0" left="23.0" top="11.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     <VBox layoutX="341.0" layoutY="1.0" prefHeight="574.0" prefWidth="868.0">
+         <children>
+            
+            
+            
+            <ScrollPane prefHeight="500.0" prefWidth="868.0">
+               <content>
+                  <Pane prefHeight="282.0" prefWidth="523.0">
+                     <children>
+                        <VBox fx:id="AnimauxVBox" layoutY="4.0" prefHeight="144.0" prefWidth="546.0">
+                           <children>
+                              <AnchorPane fx:id="AnimauxAnchorPane" disable="true" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="0.0" prefHeight="186.0" prefWidth="414.0" style="-fx-background-color: #ffffff;">
+                                 <effect>
+                                    <DropShadow blurType="GAUSSIAN" />
+                                 </effect>
+                                 <children>
+                                    <Separator fx:id="separator" focusTraversable="false" layoutX="302.0" layoutY="5.0" orientation="VERTICAL" prefHeight="165.0" prefWidth="0.0" />
+                                    <Label fx:id="nomToiltages" layoutX="308.0" layoutY="11.0" prefHeight="21.0" prefWidth="57.0" />
+                                    <Label fx:id="description" layoutX="308.0" layoutY="42.0" prefHeight="21.0" prefWidth="22.0" />
+                                    <Label fx:id="idtoi" layoutX="319.0" layoutY="151.0" />
+                                    
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="200.0" right="200.0" top="20.0" />
+                                 </padding>
+                                 <opaqueInsets>
+                                    <Insets left="500.0" />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                           </children></VBox>
+                     </children>
+                  </Pane>
+               </content>
+               <padding>
+                  <Insets left="150.0" right="70.0" top="10.0" />
+               </padding>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" />
+   </children>
+   
+</VBox>

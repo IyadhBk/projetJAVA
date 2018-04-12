@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="parent" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="1025.0" styleClass="main" stylesheets="@../Css/affichageaccueil.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.GardeAnimalController">
+   <children>
+      <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="800.0" styleClass="menu_bar">
+         <effect>
+            <DropShadow height="10.0" radius="4.5" width="10.0" />
+         </effect>
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../utils/assets/Zanimauxlogo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="acceuil" onMouseClicked="#acceuil1" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Acceuil" textFill="#ff6e06">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="11.0" left="30.0" top="11.0" />
+               </padding>
+            </Label>
+            <Label fx:id="services" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Animaux" textFill="#837f7f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="11.0" left="25.0" top="11.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="produits" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Produits" textFill="#837f7f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="11.0" left="23.0" top="11.0" />
+               </padding>
+            </Label>
+            <Label fx:id="veterinaires" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Veterinaires" textFill="#837f7f">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="11.0" left="8.0" top="11.0" />
+               </padding>
+            </Label>
+            <Label fx:id="evenements" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Association" textFill="#837f7f">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="11.0" left="8.0" top="11.0" />
+               </padding>
+            </Label>
+            <Label fx:id="espace" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Evenement" textFill="#837f7f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="11.0" left="23.0" top="11.0" />
+               </padding>
+            </Label>
+            <FontAwesomeIconView glyphName="CART_PLUS" glyphStyle="-fx-fill:#fff" size="2em">
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView glyphName="GEAR" glyphStyle="-fx-fill:#fff" size="2em">
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+         </children>
+      </HBox>
+      <HBox prefHeight="529.0" prefWidth="1025.0">
+         <children>
+            <Pane prefHeight="497.0" prefWidth="869.0" scaleShape="false">
+               <children>
+                  <Label layoutX="35.0" layoutY="158.0" text="Age :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnValider" layoutX="514.0" layoutY="432.0" mnemonicParsing="false" onAction="#AjouterAnimaux" text="Garder Un animal" />
+                  <TextField fx:id="AgeAnimaux" layoutX="93.0" layoutY="156.0" />
+                  <ChoiceBox fx:id="GardeAnimaux" layoutX="93.0" layoutY="247.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="AssociationAnimaux" layoutX="93.0" layoutY="297.0" prefWidth="150.0" />
+                  <Label layoutX="8.0" layoutY="299.0" text="Association :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="249.0" text="Garde :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="118.0" text="Coleur :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="78.0" text="Type :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ColeurAnimaux" layoutX="93.0" layoutY="116.0" />
+                  <TextField fx:id="NomAnimaux" layoutX="93.0" layoutY="42.0" />
+                  <Label layoutX="29.0" layoutY="44.0" text="Nom :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="196.0" text="Sexe :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="387.0" text="Image :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="TypeAnimaux" layoutX="92.0" layoutY="76.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="SexeAnimaux" layoutX="92.0" layoutY="194.0" prefWidth="150.0" />
+                  <Button fx:id="Afficher" layoutX="435.0" layoutY="432.0" mnemonicParsing="false" onAction="#Afficher" text="Afficher" />
+                  <ImageView fx:id="imgview" fitHeight="133.0" fitWidth="193.0" layoutX="85.0" layoutY="330.0" onMouseClicked="#uploadImage" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

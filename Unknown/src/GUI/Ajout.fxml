@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="346.0" style="-fx-background-color: #F6E497;" styleClass="register" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.AjoutController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" layoutX="10.0" layoutY="10.0" prefHeight="597.0" prefWidth="1078.0">
+         <children>
+            <VBox fx:id="parent" layoutX="1.0" layoutY="-3.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1116.0" styleClass="main" stylesheets="@../Css/acceuil.css">
+               <children>
+                  <AnchorPane prefHeight="555.0" prefWidth="1116.0">
+                     <children>
+                        <Button fx:id="Quitter" layoutX="632.0" layoutY="459.0" mnemonicParsing="false" onAction="#quitter" opacity="0.57" prefHeight="32.0" prefWidth="134.0" style="-fx-background-color: FFBE33;" stylesheets="@ajout.css" text="Quit" />
+                        <Button fx:id="Enregister" layoutX="380.0" layoutY="461.0" mnemonicParsing="false" onAction="#addEvent" opacity="0.57" prefHeight="32.0" prefWidth="134.0" style="-fx-background-color: FFBE33;" stylesheets="@ajout.css" text="Add" />
+                        <TextField fx:id="nbrplace" layoutX="456.0" layoutY="377.0" />
+                        <Button fx:id="filechooser" layoutX="455.0" layoutY="319.0" mnemonicParsing="false" onAction="#filechooser" prefHeight="32.0" prefWidth="152.0" text="file chooser " />
+                        <TextField fx:id="Lieu" layoutX="455.0" layoutY="273.0" prefHeight="26.0" prefWidth="152.0" promptText="Lieu" />
+                        <DatePicker fx:id="Date" layoutX="454.0" layoutY="227.0" prefHeight="26.0" prefWidth="152.0" promptText="Date de l'événement" />
+                        <TextArea fx:id="Description" layoutX="452.0" layoutY="164.0" prefHeight="44.0" prefWidth="152.0" />
+                        <TextField fx:id="Nom" layoutX="452.0" layoutY="123.0" promptText="Nom de l'événement" />
+                        <Label alignment="TOP_LEFT" graphicTextGap="8.0" layoutX="360.0" layoutY="81.0" text="Add new event" textAlignment="CENTER" />
+                        <Label layoutX="278.0" layoutY="122.0" text="Name :" />
+                        <Label layoutX="277.0" layoutY="172.0" text="Description :" />
+                        <Label layoutX="280.0" layoutY="227.0" text="Date :" />
+                        <Label layoutX="281.0" layoutY="274.0" text="Place :" />
+                        <Label layoutX="282.0" layoutY="322.0" text="Photo :" />
+                        <Label layoutX="284.0" layoutY="381.0" text="number of places :" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <JFXDrawer fx:id="Drawer" layoutX="-84.0" layoutY="54.0" prefHeight="564.0" prefWidth="179.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1116.0" AnchorPane.topAnchor="54.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imggg" fitHeight="76.0" fitWidth="134.0" layoutX="29.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="image" layoutX="272.0" layoutY="288.0" visible="false" />
+   </children>
+</AnchorPane>

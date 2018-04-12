@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="1131.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.AddreclamationController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" layoutX="10.0" layoutY="10.0" prefHeight="597.0" prefWidth="1117.0">
+         <children>
+            <VBox fx:id="parent" layoutX="1.0" layoutY="-3.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1116.0" styleClass="main" stylesheets="@../Css/acceuil.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="800.0" styleClass="menu_bar" stylesheets="@/Css/acceuil.css">
+                     <effect>
+                        <DropShadow height="10.0" radius="4.5" width="10.0" />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../utils/assets/Zanimauxlogo.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="acceuil" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Acceuil" textFill="#4f86dd">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="35.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="11.0" left="30.0" top="11.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="services" onMouseClicked="#ClickService" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Animaux" textFill="#837f7f">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="11.0" left="25.0" top="11.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="produits" onMouseClicked="#ClickProduit" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Produits" textFill="#837f7f">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="11.0" left="23.0" top="11.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="veterinaires" onMouseClicked="#ClickVeterinaires" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Veterinaires" textFill="#837f7f">
+                           <padding>
+                              <Insets bottom="11.0" left="8.0" top="11.0" />
+                           </padding>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="evenements" onMouseClicked="#ClickEvenements" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Evenements" textFill="#837f7f">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="11.0" left="8.0" top="11.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="espace" onMouseClicked="#ClickEspace" prefHeight="43.0" prefWidth="120.0" styleClass="menu_item" text="Association" textFill="#837f7f">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="11.0" left="8.0" top="11.0" />
+                           </padding>
+                        </Label>
+                        <Label text="1£" textFill="#4f86dd">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <FontAwesomeIconView glyphName="CART_PLUS" glyphStyle="-fx-fill:#4f86dd" size="2em">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView fx:id="Logout" glyphName="GEAR" glyphStyle="-fx-fill:#4f86dd" layoutX="944.0" layoutY="44.0" onMouseClicked="#logout" size="2em">
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                     </children>
+                  </HBox>
+                  <AnchorPane prefHeight="45.0" prefWidth="1116.0" />
+               </children>
+            </VBox>
+            <JFXDrawer fx:id="Drawer" layoutX="-84.0" layoutY="54.0" prefHeight="564.0" prefWidth="179.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1116.0" AnchorPane.topAnchor="54.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="60.0" prefHeight="560.0" prefWidth="1124.0" />
+      <ComboBox fx:id="cbIdUser" layoutX="884.0" layoutY="70.0" prefHeight="39.0" prefWidth="174.0" />
+      <Label fx:id="LbIdUser" layoutX="759.0" layoutY="66.0" prefHeight="39.0" prefWidth="116.0" text="utilisateur" textFill="#2f0ec4">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Tadescription" layoutX="234.0" layoutY="99.0" prefHeight="186.0" prefWidth="494.0" />
+      <Label fx:id="LbDescription" layoutX="38.0" layoutY="137.0" prefHeight="39.0" prefWidth="116.0" text="Description" textFill="#3e3278">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btConfirmer" layoutX="175.0" layoutY="514.0" mnemonicParsing="false" onAction="#confirmer" prefHeight="39.0" prefWidth="372.0" text="Confirmer reclamation">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Button>
+      <Label fx:id="annimal" layoutX="27.0" layoutY="316.0" prefHeight="39.0" prefWidth="138.0" text="AnimalConcerné" textFill="#2d1368">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="jihen" layoutX="317.0" layoutY="310.0" prefHeight="50.0" prefWidth="182.0" />
+      <Button fx:id="imf" accessibleRole="TEXT_FIELD" layoutX="165.0" layoutY="402.0" mnemonicParsing="false" onAction="#choose" prefHeight="34.0" prefWidth="170.0" text="Choose image" textFill="#131e13" />
+      <ImageView fitHeight="62.0" fitWidth="58.0" layoutX="60.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/camera-icon-google-images-24.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lab" layoutX="175.0" layoutY="448.0" onDragDetected="#choose" prefHeight="39.0" prefWidth="191.0" />
+      <ImageView fitHeight="58.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img" fitHeight="117.0" fitWidth="170.0" layoutX="382.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
